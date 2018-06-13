@@ -1,5 +1,4 @@
 const sessionsCtrl = require('./sessions.controller')
-const { jwt } = require('@terrajs/mono')
 
 module.exports = [
   {
