@@ -1,6 +1,6 @@
-# monoapp
+# MonoJS Complete Starter
 
-Impressive app with Mono
+Creating a complete monojs starter, with tests, authentication and mailing system.
 
 ## Installation
 
