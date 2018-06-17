@@ -7,7 +7,7 @@
     "dev": "mono dev",
     "start": "cross-env NODE_ENV=production mono",
     "lint": "eslint src/ conf/ test/",
-    "test": "npm run lint && nyc ava --verbose --serial --fail-fast test/ && nyc report --reporter=html",
+    "test": "npm run lint && nyc ava --verbose --serial --fail-fast **/**.test.js && nyc report --reporter=html",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "nyc": {
