@@ -1,7 +1,8 @@
 const { jwt } = require('@terrajs/mono')
 
 exports.createSession = async (req, res) => {
-  const token = await jwt.generateJWT(req.body)
+  const userId = 1
+  const token = await jwt.generateJWT({ userId })
   res.json({ token })
 }
 
